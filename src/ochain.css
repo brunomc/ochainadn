@@ -1,0 +1,71 @@
+.botao {
+  margin: 10px;
+  text-align: center;
+}
+
+.box {
+      display:inline-block;
+      position: relative;
+      margin: 5px;
+ 
+      width:25%;
+      height: 150px;
+      background-color: lightgrey;
+}
+.unibox {
+    text-align: center;
+}
+.h1 {
+  text-align: center;
+}
+
+.menucolor {
+  text-align: center;
+}
+
+.paddingtop {
+  padding-top: 75px;
+}
+.text-align {
+  text-align: center;
+}
+.cards {
+  display: flex;
+}
+.paddingtoprightleft {
+  text-align: center;
+  padding-top: 80px;
+  padding: 0px 250px 0px 250px;
+}
+
+.greybox {
+    margin-bottom: 25px;
+    padding: 15px 15px;
+    background-color: whitesmoke;
+}
+.paddingbottom {
+  padding-bottom: 65px;
+}
+.fullscreen {
+  height: 100vh;
+  min-height : 100vh;
+}
+.center {
+  text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin-top: -90px;
+}
+.ptopdown {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.textcenter {
+  text-align: center;
+	color: whitesmoke;
+}
+.buttonhist {
+  margin-top: -20px;
+}
