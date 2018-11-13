@@ -10,19 +10,19 @@ class Mainapp extends Component {
     super(props);
     this.state = {
       product: {
-        name: 'Vitamina A-Z',
+        name: '',
         image: '',
-        description: 'Produto original do paraná, com composição: olho de soja, extrato de leite, ovo de codorna destilado. Produto original do paraná, com composição: olho de soja, extrato de leite, ovo de codorna destilado. ',
+        description: '',
       },
       owner: {}
     }
   }
   async componentWillMount() {
     var userData;
-    await axios.get('http://localhost/products/' + this.props.match.params.code).then(res => {
+    await axios.get('https://originalchainx.herokuapp.com/products/' + this.props.match.params.code).then(res => {
 
       if (res.data.user_id) {
-        axios.get('http://localhost/users/' + res.data.user_id).then(res => {
+        axios.get('https://originalchainx.herokuapp.com/users/' + res.data.user_id).then(res => {
           userData = res.data;
 
           this.setState({
