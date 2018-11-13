@@ -47,6 +47,7 @@ class Mainapp extends Component {
       });
     }).catch(res => {
       console.log('Produto não cadastrado na base')
+      console.log(res);
     })
     console.log(this.state.product);
   }
