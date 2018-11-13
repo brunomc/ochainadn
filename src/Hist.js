@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './ochain.css';
-import Pfe from './estevan.jpg'
-import Pfm from './bruno.jpg'
+import Pfe from './estevan.jpg';
+import Pfm from './bruno.jpg';
+import Ffm from './flor.png';
 import  { Button } from 'mdbreact';
 
 class Hist extends Component {
@@ -13,8 +14,8 @@ class Hist extends Component {
         product_desc: 'Produto original do paraná, com composição: olho de soja, extrato de leite, ovo de codorna destilado. Produto original do paraná, com composição: olho de soja, extrato de leite, ovo de codorna destilado. ',
         prop_infos: {
           name:'Estevan Pedro W. R.',
-          user:'estevanpwr',
-          doc:'059.292.829-27',
+          user:'estevanw',
+          doc:'600.494.940-08',
           email: 'estevanpwr@outlook.com',
       },
     },
@@ -28,6 +29,16 @@ class Hist extends Component {
           email: 'brunome@outlook.com',
       },
     },
+    owner_first: {
+      product_name:'Vitamina A-Z',
+      product_desc: 'Produto original do paraná, com composição: olho de soja, extrato de leite, ovo de codorna destilado. Produto original do paraná, com composição: olho de soja, extrato de leite, ovo de codorna destilado. ',
+      prop_infos: {
+        name:'Vinícola da Flor',
+        user:'vinicolaflor',
+        doc:'600.847.968-28',
+        email: 'vinicolaluz@outlook.com',
+    },
+  },
   }
 }
     render() {
@@ -64,7 +75,25 @@ class Hist extends Component {
 <hr/>
 <div className="text-center font-weight-bold"> <a >02/01/2018 - 02/05/2018</a> </div>
 </div>
-<div className='text-center buttonhist'><Button href="/produto" size="sm">Voltar</Button></div>
+
+<div className='greybox z-depth-5 border border-light rounded'>
+
+<h6 className='text-center'>Criador</h6>
+<h5 className='text-center font-weight-bold '>{this.state.owner_first.prop_infos.name}</h5>
+
+<div className='text-center'>
+<img width="100px" height="100px" src={Ffm} alt='profile_photo'  className="rounded-circle" /><br/>
+</div>
+<hr/>
+<a>Usuário: {this.state.owner_first.prop_infos.user}</a><br/>
+<a>CNPJ/CPF: {this.state.owner_first.prop_infos.doc}</a><br/>
+<a>E-mail: {this.state.owner_first.prop_infos.email}</a><br/>
+<hr/>
+<div className="text-center font-weight-bold"> <a >01/01/2018 - 02/01/2018</a> </div>
+</div>
+
+
+<div className='text-center buttonhist'><Button href='/produto/11' size="sm">Voltar</Button></div>
 </div>
         
       );

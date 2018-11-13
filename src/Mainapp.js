@@ -72,7 +72,7 @@ class Mainapp extends Component {
 
           <div className='text-center'>
             <a><img width="100px" height="100px" src={"data:image/png;base64," + this.state.owner.avatar} alt='profile_photo' className="rounded-circle" /></a><br />
-            <h3>0xb74448df95f8571fd0ccff5f925f42fe681438c6b631f8c2dd51c94915162b04</h3>
+            <p>0xb74448df95f8...</p>
           </div>
           <hr />
           <p1>Usuário: {this.state.owner.name}</p1><br />
