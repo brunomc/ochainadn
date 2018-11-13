@@ -21,9 +21,11 @@ class Mainapp extends Component {
     var userData;
     await axios.get('https://originalchainx.herokuapp.com/products/' + this.props.match.params.code).then(res => {
       console.log(res.data);
+       console.log("get1");
       if (res.data.user_id) {
         axios.get('https://originalchainx.herokuapp.com/users/' + res.data.user_id).then(res => {
           userData = res.data;
+          console.log("get2");
           console.log(res.data);
           this.setState({
             owner: {
